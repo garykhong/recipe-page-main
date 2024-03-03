@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Recipe page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .young-serif-regular {
+      font-family: "Young Serif", serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    .outfit-regular {
+      font-family: "Outfit", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 100;
+      font-style: normal;
+    }
+
+    h1,
+    h2 {
+      font-family: "Young Serif", serif;
+    }
+
+    body {
+      font-family: "Outfit", sans-serif;
+    }
+
+    .contents {
+      margin: 0 auto;
+      max-width: 90%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .preparationTimeHeading {
+      color: hsl(332, 51%, 32%);
+    }    
+
+    .contents h2 {
+      color: hsl(14, 45%, 36%);
+      font-weight: 550;
+    }
+
+    .contents li {
+      padding-left: 1em
+    }
+
+    hr {
+      border: 0;
+      clear: both;
+      display: block;
+      width: 100%;
+      background-color: hsl(30, 18%, 87%);
+      height: 1px;
+    }
+
+    .instructionsList li::marker {
+      color: hsl(14, 45%, 36%);
+      font-weight: 600;
+    }
+
+    .instructionSummary {
+      font-weight: 600;      
+    }
+
+    .nutritionTable {
+      margin: 0 auto;
+      width: 100%
+    }
+
+    .nutritionRow {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20%;
+      margin-bottom: 1rem;
+      padding: 1rem 0 1rem 3rem;
+    }
+
+    .nutritionValue {
+      font-weight: 600;
+      color: hsl(14, 45%, 36%);
+    }
+
+    .nutritionRow:not(:last-of-type) {
+      border-bottom: 2px solid hsl(30, 18%, 87%);
+    }
+
+    .preparationTimeList li::marker {
+      color: hsl(332, 51%, 32%);
+    }
+
+    .ingredientsList li::marker {
+      color: hsl(14, 45%, 36%);
+    }
+
+    .container li+li {
+        margin-top: 1rem;
+      }
+
+    @media (min-width: 1278px) {
+      .container h1 {
+        font-size: 4rem;
+      }
+
+      .container h2 {
+        font-size: 3rem;
+      }
+
+      .container h3 {
+        font-size: 2rem;
+      }
+
+      body {
+        font-size: 1.5rem;
+      }
+
+      .container img {
+        margin: 4rem auto 0 auto;
+        max-width: 90%;
+        border-radius: 2rem;
+      }
+
+      .container {
+        max-width: 1500px;
+        margin: 0 auto;
+      }
+    }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;400;700&family=Young+Serif&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <img src="assets/images/image-omelette.jpeg" alt="A wrap with meat and salad on a plate" />
+    <div class="contents">
+
+      <h1>Simple Omelette Recipe</h1>
+      <p>An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked
+        to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
+      <div class="preparationTimeSection">
+        <h3 class="preparationTimeHeading">Preparation time</h3>
+        <ul class="preparationTimeList">
+          <li>
+            <span class="instructionSummary">Total:</span> Approximately 10 minutes
+          </li>
+          <li>
+            <span class="instructionSummary">Preparation:</span> 5 minutes
+          </li>
+          <li>
+            <span class="instructionSummary">Cooking:</span> 5 minutes
+          </li>
+        </ul>
+      </div>
+      <h2>Ingredients</h2>
+      <ul class="ingredientsList">
+        <li>2-3 large eggs</li>
+        <li>Salt, to taste</li>
+        <li>Pepper, to taste</li>
+        <li>1 tablespoon of butter or oil</li>
+        <li>Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
+      </ul>
+
+      <hr>
+
+      <h2>Instructions</h2>
+      <ol class="instructionsList">
+        <li><span class="instructionSummary">Beat the eggs:</span> In a bowl, beat the eggs with a pinch of salt and
+          pepper until they are well mixed.
+          You can add a tablespoon of water or milk for a fluffier texture.</li>
+        <li><span class="instructionSummary">Heat the pan:</span> Place a non-stick frying pan over medium heat and add
+          butter or oil.</li>
+        <li>
+          <span class="instructionSummary">Cook the omelette:</span> Once the butter is melted and bubbling, pour in the
+          eggs. Tilt the pan to ensure
+          the eggs evenly coat the surface.
+        </li>
+        <li>
+          <span class="instructionSummary">Add fillings (optional):</span> When the eggs begin to set at the edges but
+          are still slightly runny in the
+          middle, sprinkle your chosen fillings over one half of the omelette.
+        </li>
+        <li>
+          <span class="instructionSummary">Fold and serve:</span> As the omelette continues to cook, carefully lift one
+          edge and fold it over the
+          fillings. Let it cook for another minute, then slide it onto a plate.
+        </li>
+        <li><span class="instructionSummary">Enjoy:</span> Serve hot, with additional salt and pepper if needed.</li>
+      </ol>
+
+      <hr>
+
+      <h2>Nutrition</h2>
+      <p>The table below shows nutritional values per serving without the additional fillings.</p>
+      <div class="nutritionTable">
+        <div class="nutritionRow">
+          <div>Calories</div>
+          <div class="nutritionValue">277kcal</div>
+        </div>
+        <div class="nutritionRow">
+          <div>Carbs</div>
+          <div class="nutritionValue">0g</div>
+        </div>
+        <div class="nutritionRow">
+          <div>Protein</div>
+          <div class="nutritionValue">20g</div>
+        </div>
+        <div class="nutritionRow">
+          <div>Fat</div>
+          <div class="nutritionValue">22g</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Gary Khong</a>.
+  </div>
+</body>
+
+</html>
